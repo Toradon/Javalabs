@@ -8,6 +8,10 @@ public class Container
 {
 	private int[] array = null;
 
+	/** Изменяет размер контейнера
+	 * @param newSize Новый размер контейнера     
+	*/
+
 	public void resize(int newSize)
 	{
 		if (newSize == 0) array = null;
