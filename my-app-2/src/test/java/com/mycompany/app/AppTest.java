@@ -10,7 +10,7 @@ import org.junit.Test;
 public class AppTest 
 {
     /**
-     * Rigorous Test :-)
+     * Проверяем число
      */
     @Test
     public void testNumber()
@@ -27,6 +27,9 @@ public class AppTest
     	}
     }
 
+	/**
+     * Проверяем генерацию ошибки на не-числах
+     */
     @Test
     public void testNotNumber()
     {
@@ -43,6 +46,10 @@ public class AppTest
     	}
     }
 
+	/**
+     * Проверяем сложение
+     */
+
     @Test
     public void testPlus()
     {
@@ -56,6 +63,10 @@ public class AppTest
     		assertTrue( false );
     	}
     }
+
+    /**
+     * Проверяем вычитание
+     */
 
      @Test
     public void testMinus()
@@ -71,6 +82,10 @@ public class AppTest
     	}
     }
 
+    /**
+     * Проверяем базовыве арифметические операции
+     */
+
      @Test
     public void testComb()
     {
@@ -85,6 +100,10 @@ public class AppTest
     	}
     }
 
+    /**
+     * Проверяем скобки
+     */
+
      @Test
     public void testParentheses()
     {
@@ -98,6 +117,11 @@ public class AppTest
     		assertTrue( false );
     	}
     }
+
+    /**
+     * Проверяем устойчивость к пробелам
+     */
+
      @Test
     public void testSpaces()
     {
