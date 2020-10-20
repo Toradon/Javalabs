@@ -118,6 +118,25 @@ public class AppTest
     	}
     }
 
+	/**
+     * Проверяем вложенные скобки скобки
+     */
+
+     @Test
+    public void testNestedParentheses()
+    {
+    	try
+    	{
+    	Node n = Node.parse("10+(5-2*(4+2))*3");
+    	assertTrue( n.eval() == -11 );
+    	}
+    	catch(Exception e)
+    	{
+    		assertTrue( false );
+    	}
+    }
+
+
     /**
      * Проверяем устойчивость к пробелам
      */
@@ -127,8 +146,8 @@ public class AppTest
     {
     	try
     	{
-    	Node n = Node.parse(" (2 * 3 -6 ) / 3");
-    	assertTrue( n.eval() == 0 );
+    	Node n = Node.parse(" (2 * (6 -2) ) / 3");
+    	assertTrue( n.eval() == 2 );
     	}
     	catch(Exception e)
     	{
