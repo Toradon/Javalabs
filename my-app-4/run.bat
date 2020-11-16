@@ -1,0 +1,1 @@
+cmd /k "java -cp ".;commons-lang3-3.11.jar;opencsv-4.3.jar;target/my-app-4-1.0-SNAPSHOT.jar;" com.mycompany.app.App"
