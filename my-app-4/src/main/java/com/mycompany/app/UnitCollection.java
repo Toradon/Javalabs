@@ -2,8 +2,18 @@ package com.mycompany.app;
 
 import java.util.ArrayList;
 
+/**
+ *  Класс для хранения списка рвботников или подразделений.
+ */
+
 public class UnitCollection extends ArrayList<Unit>
 {
+
+/**
+ * Метод генерации нового идентефикатора.
+ *@return Свободный идентификатор.
+ */
+
 	public String generateId()
 	{
 		Integer id = size();
@@ -25,6 +35,12 @@ public class UnitCollection extends ArrayList<Unit>
 		} while (busy);
 		return id.toString();
 	}
+
+/**
+ * Метод поиска объекта по имени или названию.
+ *@param name Имя или название.
+ *@return Возвращает ссылку на объект, если он найден, или null, если не найден.
+ */
 
 	public Unit getByName(String name)
 	{

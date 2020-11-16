@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import com.opencsv.CSVReader;
 import java.io.FileNotFoundException;
 /**
- * Reading CSV file
+ * Класс чтения CSV-файла заданной структуры. Данные читаются из файла ресурсов /foreign_names.csv.
  *
  */
 public class App 
@@ -15,12 +15,6 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Reading CSV file" );
-
-        //departments.add(new Department("qqq", departments.generateId()));
-		//departments.add(new Department("zzz", departments.generateId()));
-		//departments.print();
-
-		//return;
 
         String fileName = "/foreign_names.csv";
 
