@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class AppTest 
 {
-	private static UnitCollection departments = new UnitCollection();
+	private static UnitCollection<Department> departments = new UnitCollection<>();
 
     /**
      * Проверяем генерацию id.

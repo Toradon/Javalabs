@@ -6,7 +6,7 @@ import java.util.ArrayList;
  *  Класс для хранения списка рвботников или подразделений.
  */
 
-public class UnitCollection extends ArrayList<Unit>
+public class UnitCollection<T extends Unit> extends ArrayList<T>
 {
 
 /**
@@ -42,11 +42,11 @@ public class UnitCollection extends ArrayList<Unit>
  *@return Возвращает ссылку на объект, если он найден, или null, если не найден.
  */
 
-	public Unit getByName(String name)
+	public T getByName(String name)
 	{
 		for(int i =0; i < size(); i++)
 		{
-			Unit u = get(i);
+			T u = get(i);
 			if(u.getName().compareTo(name) == 0) return u;
 		}
 		return null;
@@ -56,7 +56,7 @@ public class UnitCollection extends ArrayList<Unit>
 	{
 		for(int i =0; i < size(); i++)
 		{
-			Unit u = get(i);
+			T u = get(i);
 			System.out.println(u);
 		}
 	}

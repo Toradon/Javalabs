@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
  */
 public class App 
 {
-	private static UnitCollection departments = new UnitCollection();
-	private static UnitCollection stuff = new UnitCollection();
+	private static UnitCollection<Department> departments = new UnitCollection<>();
+	private static UnitCollection<Stuff> stuff = new UnitCollection<>();
     public static void main( String[] args )
     {
         System.out.println( "Reading CSV file" );
@@ -32,13 +32,13 @@ public class App
             	s.parseDob(nextLine[3]);
             	s.parseSalary(nextLine[5]);
 
-            	Unit dep = departments.getByName(nextLine[4]);
+            	Department dep = departments.getByName(nextLine[4]);
             	if (dep == null) 
             	{
             		dep = new Department(nextLine[4], departments.generateId());
             		departments.add(dep);
             	}
-            	s.setDepartment((Department)dep);
+            	s.setDepartment(dep);
             	stuff.add(s);
             }
 
