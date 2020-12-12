@@ -1,0 +1,11 @@
+com.mycompany.app.Bird.move = com.mycompany.app.Fly
+com.mycompany.app.Bird.voice = com.mycompany.app.Scree
+com.mycompany.app.Dog.move = com.mycompany.app.Run
+com.mycompany.app.Dog.voice = com.mycompany.app.Bark
+com.mycompany.app.Snake.move = com.mycompany.app.Crawl
+com.mycompany.app.Snake.voice = com.mycompany.app.Hiss
+
+
+
+
+
